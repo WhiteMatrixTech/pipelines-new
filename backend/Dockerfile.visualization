@@ -20,8 +20,8 @@
 # This image should be in sync with image in backend/src/apiserver/visualization/update_requirements.sh.
 FROM dave917/tensorflow:2.10.1
 
-RUN apt-get update \
-  && apt-get install -y wget curl tar openssl
+RUN apt update \
+  && apt install -y wget curl tar openssl
 
 RUN curl https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.tar.gz > /tmp/google-cloud-sdk.tar.gz
 RUN mkdir -p /usr/local/gcloud
