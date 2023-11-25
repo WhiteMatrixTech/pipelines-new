@@ -91,7 +91,7 @@ jobs:
         #          TARGETARCH: arm64
         with:
           context: .
-          file: backend/Dockerfile.cacheserver
+          file: backend/Dockerfile.persistenceagent
           push: ${{ github.event_name != 'pull_request' }}
-          tags: dave917/cache-server:2.0.3
+          tags: dave917/persistenceagent:2.0.3
           platforms: linux/arm64
