@@ -21,7 +21,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-host
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -84,6 +84,7 @@ jobs:
       #            type=ref,event=tag
       #            type=sha,prefix=,format=long,enable=true,priority=100
 
+# docker build -f third_party/metadata_envoy/Dockerfile -t dave917/metadata-envoy:2.0.3 .
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         #        env:
