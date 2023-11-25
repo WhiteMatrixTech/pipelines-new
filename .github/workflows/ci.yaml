@@ -91,7 +91,7 @@ jobs:
         #          TARGETARCH: arm64
         with:
           context: .
-          file: backend/Dockerfile.viewercontroller
+          file: backend/Dockerfile.visualization
           push: ${{ github.event_name != 'pull_request' }}
-          tags: dave917/viewercontroller:2.0.3
+          tags: dave917/visualization:2.0.3
           platforms: linux/arm64
