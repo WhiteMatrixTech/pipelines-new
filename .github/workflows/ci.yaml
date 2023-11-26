@@ -92,7 +92,7 @@ jobs:
         #          TARGETARCH: arm64
         with:
           context: .
-          file: third_party/metadata_envoy/Dockerfile
+          file: backend/Dockerfile.visualization
           push: ${{ github.event_name != 'pull_request' }}
-          tags: dave917/metadata-envoy:2.0.3
+          tags: dave917/visualization:2.0.3
           platforms: linux/arm64
