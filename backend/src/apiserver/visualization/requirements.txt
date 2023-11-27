@@ -278,7 +278,7 @@ nest-asyncio==1.5.8
     # via notebook
 notebook==6.4.13
     # via widgetsnbextension
-numpy==1.26.0
+numpy==1.25.0
     # via
     #   apache-beam
     #   bokeh
