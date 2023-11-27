@@ -18,7 +18,7 @@
 # and exporter.py files in the directory specified above.
 
 # This image should be in sync with image in backend/src/apiserver/visualization/update_requirements.sh.
-FROM kubeflownotebookswg/jupyter-tensorflow-full:latest
+FROM dave917/tensorflow:2.10.1
 
 RUN sudo apt-get update \
   && sudo apt-get install -y wget curl tar openssl
